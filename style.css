@@ -1,0 +1,238 @@
+@import url(//db.onlinewebfonts.com/c/4c19fc875e7ba1e6831129de3ab5ac0b?family=Retro+Gaming);
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.main{
+   background-color: aqua;
+   height:100vh;
+   width: 100%;
+   background-image: url(images/bg2.jpg);
+   background-repeat: repeat;
+   background-size:cover;
+}
+.stars{
+  background-image: url(images/star-decoration.png);
+  height: 50vh;
+  width: 800vw;
+  background-size: contain;
+  background-repeat: repeat;
+  animation: roadani linear 40s infinite;
+}
+.main .road{
+  background-image: url(images/rail_road.png);
+    height: 400px;
+    width: 800vw;
+    position:absolute;
+    top: 323px;
+}
+.bell p{
+  position: absolute;
+  top: 90px;
+  left:20px;
+  font-size: 20px;
+  color: green;
+  font-family: "Retro Gaming";
+}
+.flg p{
+  position: absolute;
+  right: 20px;
+  top:100px;
+  font-size: 20px;
+  color: green;
+  font-family: "Retro Gaming";
+
+}
+.roadRun{
+   animation: roadani linear 14s infinite;
+}
+.trainShake{
+  animation: trainshake linear 1s infinite;
+}
+.wheelRun{
+  animation: wheelani linear 0.6s infinite;
+}
+
+.train img{
+    width: 700px;
+    position: absolute;
+    top: 50px;
+    left: 200px;
+   
+}
+  .wheels .wheel1 img{
+    position: absolute;
+    top: 147px;
+    left: 131px;
+    
+}
+  .wheels .wheel2 img{
+    position: absolute;
+    left: 222px;
+top: 148px;
+}
+  .wheels .wheel3 img{
+    position: absolute;
+    left: 458px;
+top: 146px;
+}
+  .wheels .wheel4 img{
+    position: absolute;
+    left: 347px;
+top: 148px;
+}
+
+  .wheels .wheel5 img{
+    position: absolute;
+    left: 15px;
+    top: 149px;
+}
+  .wheels .wheel6 img{
+    position: absolute;
+    left: -77px;
+top: 149px;
+}
+@keyframes wheelani {
+    100%{
+        transform: rotate(360deg);
+    }
+} 
+ @keyframes roadani {
+    100%{
+        transform: translateX(-500vw);
+    }
+}
+@keyframes trainshake {
+   0%{
+    transform: translateY(-2px);
+   }
+   50%{
+  transform: translateY(2px);
+   }
+   100%{
+  transform: translateY(-2px);
+   }
+  }
+  .bell img{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    cursor: pointer;
+    right: 127px;
+    top: 17px;
+}
+.ring{
+    animation: bellring linear 1s infinite;
+}
+@keyframes bellring {
+    0%{
+      transform: rotate(-30deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-30deg);
+    }
+}
+.flg img{
+  width: 80px;
+  position: absolute;
+  top: 30px;
+  left:130px;
+  cursor: pointer;
+}
+ .train_start{
+  animation:roadani ease-in 15s 1; 
+ }
+.blow{
+  animation: blowing linear 1s infinite;
+} 
+@keyframes blowing {
+  0%{
+    transform: rotate(-30deg);
+  }
+  50%{
+      transform: rotate(0deg);
+  }
+  100%{
+      transform: rotate(-30deg);
+  }
+}
+@media (max-width:500px) {
+  .main{
+    overflow-x: hidden;
+  }
+ .main .road{
+  height: 300px;
+  width: 800vw;
+  top: 260px;
+  overflow: hidden;
+ }
+ .train img{
+  width: 350px;
+  left: 0px;
+  top:230px;
+  overflow: hidden;
+ }
+ .wheels .wheel6 img{
+  left: -113px;
+  height: 300px;
+  width: 300px;
+  top: 305px;
+}
+ .wheels .wheel5 img{
+  left: -67px;
+  height: 300px;
+  width: 300px;
+  top: 305px;
+}
+ .wheels .wheel4 img{
+  left: -9px;
+  height: 300px;
+  width: 300px;
+  top: 305px;
+}
+ .wheels .wheel3 img{
+  left: 37px;
+  height: 300px;
+  width: 300px;
+  top: 305px;
+}
+ .wheels .wheel2 img{
+  left: 154px;
+  height: 300px;
+  width: 300px;
+  top: 305px;
+}
+ .wheels .wheel1 img{
+  left: 100px;
+  height: 300px;
+  width: 300px;
+  top: 305px;
+}
+.flg img{
+  top: 670px;
+  left: 60px;
+  overflow: hidden;
+}
+.bell img{
+  top: 637px;
+  right: 60px;
+  overflow: hidden;
+}
+.bell p{
+  font-size: 10px;
+  top: 737px;
+  left: 274px;
+  width: 100px;
+}
+.flg p{
+  font-size: 10px;
+  top: 737px;
+  left: 66px;
+  width: 100px;
+}
+ }
+ 
