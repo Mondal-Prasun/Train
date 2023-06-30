@@ -121,6 +121,7 @@ top: 149px;
     cursor: pointer;
     right: 127px;
     top: 17px;
+    z-index: 1;
 }
 .ring{
     animation: bellring linear 1s infinite;
@@ -142,6 +143,7 @@ top: 149px;
   top: 30px;
   left:130px;
   cursor: pointer;
+  z-index: 1;
 }
  .train_start{
   animation:roadani ease-in 15s 1; 
